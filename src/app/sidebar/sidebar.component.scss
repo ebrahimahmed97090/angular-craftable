@@ -1,0 +1,78 @@
+//rmpad for removing padding left from large icons links to be aligned
+$navIconsOpenedColor: #73818f;
+$navIconsOpenedColorOnHover: #fff;
+$navTextsOpenedColor: #fff;
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    color: #fff;
+    background: #485779;
+    height: 92vh;
+    width: 16.5vw;
+    ul {
+        width: 100%;
+        li {
+            overflow: hidden;
+            width: inherit;
+            a {
+                width: 16.5vw;
+                overflow: hidden;
+            }
+        }
+        li:hover {
+            background-color: #4273fa;
+            display: block;
+            overflow: hidden;
+            width: 16.5vw;
+            a span {
+                display: inline-block!important;
+            }
+            i {
+                color: $navIconsOpenedColorOnHover;
+            }
+        }
+    }
+    .lone {
+        width: 100%;
+        background: rgba(0, 0, 0, 0.2);
+        height: 50px;
+        text-align: right;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        border: none;
+    }
+    .lone:hover,
+    .lone:focus {
+        background: rgba(0, 0, 0, 0.2);
+        height: 50px;
+        width: 100%;
+        text-align: right;
+        align-items: center;
+        border: none;
+        box-shadow: none;
+        outline: none;
+    }
+    a {
+        color: $navTextsOpenedColor;
+        cursor: pointer;
+    }
+    h6 {
+        color: $navTextsOpenedColor;
+    }
+    .rotate {
+        transform: rotate(-45deg);
+    }
+    i {
+        color: $navIconsOpenedColor;
+        font-size: 20px;
+        margin: 0 5px 0 0;
+    }
+    .holder {
+        margin-top: auto;
+    }
+    .rmpad {
+        padding-left: 12px;
+    }
+}

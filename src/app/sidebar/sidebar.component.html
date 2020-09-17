@@ -1,0 +1,83 @@
+<div class="sidebar-sticky pt-3 sidebar" [@divState]="state">
+    <ul class="nav flex-column">
+
+        <h6 [@hideState]="state" class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1">
+            <span [@hideState]="state">Content</span>
+        </h6>
+        <li class="nav-item">
+            <a class="nav-link active" href="#">
+                <span>
+          <i class="rotate fa  fa-plane"></i>
+        </span> <span [@hideState]="state">Standard</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"> <span>
+          <i class="fa  fa-globe"></i>
+        </span> <span [@hideState]="state">With media</span>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="#">
+                <span>
+          <i class="fa  fa-ghost"></i>
+        </span> <span [@hideState]="state">Translatable</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">
+                <span>
+          <i class="fa  fa-tint"></i>
+        </span> <span [@hideState]="state">With export</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link rmpad" href="#">
+                <span>
+          <i class="fa  fa-graduation-cap"></i>
+        </span> <span [@hideState]="state">With relationship</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link rmpad" href="#">
+                <span>
+          <i class="fa  fa-book-open"></i>
+        </span> <span [@hideState]="state">bulk Actions</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">
+                <span>
+          <i class="fa  fa-tag"></i>
+        </span> <span [@hideState]="state">Tags</span>
+            </a>
+        </li>
+    </ul>
+
+    <h6 [@hideState]="state" class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 ">
+        <span [@hideState]="state">Settings</span>
+
+    </h6>
+    <ul class="nav flex-column mb-2">
+        <li class="nav-item">
+            <a class="nav-link" href="#">
+                <span>
+          <i class="fa  fa-user"></i>
+        </span> <span [@hideState]="state">Manage Access</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">
+                <span>
+          <i class="fa  fa-map-marker-alt"></i>
+        </span> <span [@hideState]="state">Translations</span>
+            </a>
+        </li>
+    </ul>
+    <div class="holder">
+
+        <button class="lone" (click)="onAnimate()"><i  [@rotateState]="state" class="fas  fa-chevron-right mr-3"></i></button>
+
+    </div>
+</div>
