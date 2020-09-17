@@ -9,14 +9,13 @@ $navTextsOpenedColor: #fff;
     color: #fff;
     background: #485779;
     height: 92vh;
-    width: 16.5vw;
+    width: 220px;
     ul {
-        width: 100%;
         li {
             overflow: hidden;
             width: inherit;
             a {
-                width: 16.5vw;
+                width: 220px;
                 overflow: hidden;
             }
         }
@@ -24,9 +23,9 @@ $navTextsOpenedColor: #fff;
             background-color: #4273fa;
             display: block;
             overflow: hidden;
-            width: 16.5vw;
+            width: 220px;
             a span {
-                display: inline-block!important;
+                display: inline-block !important;
             }
             i {
                 color: $navIconsOpenedColorOnHover;
@@ -72,7 +71,23 @@ $navTextsOpenedColor: #fff;
     .holder {
         margin-top: auto;
     }
+    .holder:hover {
+        background-color: rgba(0, 0, 0, 0.3);
+        button i {
+            color: rgb(170, 170, 170);
+        }
+    }
     .rmpad {
         padding-left: 12px;
     }
+}
+
+.fix {
+    display: inline-block;
+    width: 30px;
+}
+
+.rmd {
+    width: 35px;
+    display: inline-block;
 }

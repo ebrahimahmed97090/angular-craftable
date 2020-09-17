@@ -14,38 +14,42 @@ import { Component, OnInit } from '@angular/core';
   animations: [
     trigger('divState', [
       state(
-        'open',
+        'opened',
         style({
-          width: '16.5vw',
+          width: '220px',
         })
       ),
-      state('closed', style({ width: '3.0vw' })),
-      transition('opened<=>closed', animate(200)),
+      state('closed', style({ width: '55px' })),
+      transition('opened<=>closed', animate(300)),
     ]),
     trigger('rotateState', [
       state(
-        'open',
+        'opened',
         style({
-          transform: 'rotate(-180deg)',
+          transform: 'rotate(180deg)',
+          transition: 'all 300ms linear'
         })
       ),
-      state('closed', style({ transform: 'rotate(180deg)' })),
-      transition('opened<=>closed', animate(300)),
+      state(
+        'closed',
+        style({ transform: 'rotate(0deg)', transition: 'all 300ms linear' })
+      ),
+
+
     ]),
     trigger('hideState', [
       state(
-        'open',
+        'opened',
         style({
           display: '',
         })
       ),
-      state('closed', style({ display: 'none' })),
-      transition('opened<=>closed', animate(200)),
+      state('closed', style({ display: 'none', marginLeft: '10px'  })),
     ]),
   ],
 })
 export class SidebarComponent implements OnInit {
-  state = 'opened';
+  state = 'closed';
   onAnimate(): void {
     this.state === 'opened' ? (this.state = 'closed') : (this.state = 'opened');
   }
