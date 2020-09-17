@@ -5,46 +5,47 @@
             <span [@hideState]="state">Content</span>
         </h6>
         <li class="nav-item">
-            <a class="nav-link active" href="#">
+            <a routerLink="/standard" class="nav-link active" href="#">
                 <span class="fix">
           <i class="rotate fa  fa-plane"></i>
         </span><span [@hideState]="state">Standard</span>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#"><span class="fix">
+            <a class="nav-link" routerLink="/media"><span class="fix">
           <i class="fa  fa-globe"></i>
         </span><span [@hideState]="state">With media</span>
       </a>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link" href="#"><span class="fix">
+            <a class="nav-link" routerLink="/translatable"><span class="fix">
           <i class="fa  fa-ghost"></i>
         </span><span [@hideState]="state">Translatable</span>
       </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" routerLink="/export">
                 <span class="fix">
           <i class="fa  fa-tint"></i>
         </span><span [@hideState]="state">With export</span>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link rmpad" href="#">
+            <a class="nav-link rmpad" routerLink="/relation">
                 <span class="rmd">
           <i class="fa  fa-graduation-cap"></i>
         </span><span [@hideState]="state">With relationship</span></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link rmpad" href="#">
+            <a class="nav-link rmpad" routerLink="/bulk">
                 <span class="rmd">
           <i class="fa  fa-book-open"></i>
         </span><span [@hideState]="state">bulk Actions</span></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#"><span class="fix"><i class="fa  fa-tag"></i></span><span [@hideState]="state">Tags</span>
+            <a class="nav-link" routerLink="/tags"><span class="fix"><i class="fa  fa-tag"></i></span><span
+          [@hideState]="state">Tags</span>
       </a>
         </li>
     </ul>
@@ -52,13 +53,14 @@
     <h6 [@hideState]="state" class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 "><span [@hideState]="state">Settings</span></h6>
     <ul class="nav flex-column mb-2">
         <li class="nav-item">
-            <a class="nav-link" href="#"><span class="fix"><i class="fa  fa-user"></i></span><span [@hideState]="state">Manage Access</span></a>
+            <a class="nav-link" routerLink="/accessman"><span class="fix"><i class="fa  fa-user"></i></span><span
+          [@hideState]="state">Manage Access</span></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#"><span class="fix">
+            <a class="nav-link" routerLink="transaltions"><span class="fix">
           <i class="fa  fa-map-marker-alt"></i>
         </span><span [@hideState]="state">Translations</span>
-            </a>
+      </a>
         </li>
     </ul>
     <div class="holder">
